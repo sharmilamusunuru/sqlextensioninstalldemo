@@ -1,0 +1,15 @@
+# Example terraform.tfvars file
+# Copy this file to terraform.tfvars and update with your values
+
+resource_group_name = "sql-vm-rg"
+location            = "East US"
+prefix              = "sqlvm"
+vm_size             = "Standard_D2s_v3"
+admin_username      = "sqladmin"
+# admin_password should be set via environment variable or command line
+# admin_password      = "YourSecurePassword123!"
+
+sql_server_offer            = "sql2019-ws2019"
+sql_server_sku              = "standard-gen2"
+sql_license_type            = "PAYG"
+auto_patching_day_of_week   = "Sunday"
